@@ -1,0 +1,13 @@
+body{
+      background:pink;
+      font-color:darkgreen;
+      font-size:20px;
+      font-weight:bold
+    }
+.head1{
+     text-align:center;
+     font-size:30px;
+     color:blue;
+     font-style:italic;
+     font-weight:bold
+}

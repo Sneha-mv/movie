@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<h4 style="text-align:center;font-family:sans-serif;font-size:25px;color:blue; font-weight:bold"><u>MOVIE DETAILS</u></h4><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="margin-top:40px;">
+            <img src="{{ detail.img.url }}" width="350px" height="300px">
+        </div>
+    <div class="col-md-6" style="margin-top:40px;">
+        <h4>Movie name : {{ detail.name }}</h4><br>
+        <h4>Movie type : {{ detail.category }}</h4><br>
+        <h4>Director name : {{ detail.director }}</h4><br>
+        <h4>Released year : {{ detail.year }}</h4><br><br>
+        <a class="btn btn-success" href="{% url 'movieapp:update' detail.id %}" style="margin-left:70px;">UPDATE</a>
+        <a class="btn btn-danger" href="{% url 'movieapp:delete' detail.id %}" style="margin-left:50px;">DELETE</a>
+    </div>
+    </div>
+</div>
+{% endblock %}
+

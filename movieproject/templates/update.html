@@ -1,0 +1,9 @@
+
+<h4 style="text-align:center;font-family:sans-serif;font-size:25px;color:blue; font-weight:bold"><u>UPDATE DETAILS</u></h4><br>
+<body style="background:pink;">
+<form method="post" enctype="multipart/form-data">
+   {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+</body>
